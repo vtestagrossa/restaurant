@@ -15,7 +15,7 @@
   \**********************/
 /***/ (() => {
 
-eval("\n\n//# sourceURL=webpack://restaurant/./src/index.js?");
+eval("console.log('hello world');\n\n//# sourceURL=webpack://restaurant/./src/index.js?");
 
 /***/ })
 
