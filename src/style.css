@@ -1,3 +1,7 @@
+@font-face{
+    font-family: "Marker";
+    src: url(../src/PermanentMarker-Regular.ttf)
+}
 *{
     box-sizing: border-box;
 }
@@ -15,7 +19,7 @@ body{
     align-items: center;
     height: 100%;
     width: 100%;
-    background: url(../background.jpg);
+    background: url(../src/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -29,12 +33,22 @@ body{
     background-color: black;
     border-color: black;
     opacity: 70%;
+    font-size: 150%;
     color: white;
+}
+.logo{
+    font-family: "Marker";
 }
 .navigation{
     display: flex;
     justify-content: space-between;
     width: 15%;
+}
+.navigation a{
+    color: white;
+}
+.navigation a:visited{
+    color: white;
 }
 .hero-frame{
     display: flex;
@@ -46,7 +60,7 @@ body{
     border-style: solid;
 }
 .hero-top{
-    margin-bottom: 5%;
+    margin-bottom: 8%;
     width: 50%;
     height: 30%;
     border-style: solid;
@@ -62,6 +76,18 @@ body{
     border-style: solid;
     background-color: black;
     border-color: black;
+    opacity: 70%;
+    color: white;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: black;
     opacity: 70%;
     color: white;
 }
