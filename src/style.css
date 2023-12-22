@@ -41,9 +41,10 @@ body{
 .navigation{
     display: flex;
     justify-content: space-between;
-    width: 20%;
+    width: 22%;
+    max-width: 16em;
 }
-.navigation button{
+.navigation-button{
     color: white;
     background-color: rgb(34, 151, 81);
     border-style: solid;
@@ -59,8 +60,8 @@ body{
 .navigation button:active{
     background-color:rgb(25, 119, 62);
 }
-.active-button{
-    background-color:rgb(25, 119, 62);
+.navigation-active{
+    background-color:rgb(14, 67, 35);
 }
 .hero-frame{
     display: flex;
@@ -68,6 +69,14 @@ body{
     justify-content: end;
     align-items: center;
     height: 90%;
+    width: 100%;
+}
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    height: 100%;
     width: 100%;
 }
 .hero-top{
