@@ -1,1 +1,3 @@
-console.log('hello world');
+import renderPage from "./website.js";
+
+renderPage();
