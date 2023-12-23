@@ -127,11 +127,13 @@ body{
     margin:0;
     font-size: 130%;
     margin-left: 20%;
+    margin-right: 10%;
     color: white;
 }
 .hero-bottom a{
     font-size: 130%;
     margin-left: 20%;
+    margin-right: 10%;
     color: white;
 }
 .hero-bottom a:visited{
