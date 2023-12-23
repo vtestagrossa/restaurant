@@ -1,6 +1,7 @@
 function createTop() {
     const top = document.createElement('div');
     top.classList.add('hero-top');
+    top.classList.add('slideInLeft');
     const heroLogo = document.createElement('div');
     heroLogo.classList.add('hero-logo');
     const heading = document.createElement('h1');
@@ -18,6 +19,7 @@ function createTop() {
 function createBottom(){
     const bottom = document.createElement('div');
     bottom.classList.add('hero-bottom');
+    bottom.classList.add('slideInLeft');
     const locationHeading = document.createElement('h2');
     locationHeading.textContent = "Location:";
     const location = document.createElement('a');

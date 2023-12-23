@@ -1,6 +1,27 @@
+@keyframes slideInLeft {
+    from {
+        margin-left: 100%;
+    }
+    to {
+        margin-left: 0%;
+    }
+}@keyframes slideInRight {
+    from {
+        margin-left: 0%;
+    }
+    to {
+        margin-left: 100%;
+    }
+}
 @font-face{
     font-family: "Marker";
     src: url(../src/PermanentMarker-Regular.ttf)
+}
+.slideInLeft{
+    animation: 0.25s slideInLeft;
+}
+.slideInRight{
+    animation: 0.25s slideInRight;
 }
 *{
     box-sizing: border-box;
@@ -116,13 +137,25 @@ body{
 .hero-bottom a:visited{
     color: white;
 }
+.menu-container{
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    border-style: solid;
+    width: 100%;
+    height: 100%;
+}
+.menu-item{
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+}
 .footer{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 5%;
     width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     background-color: rgb(34, 151, 81);
     color: white;

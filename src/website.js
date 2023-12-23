@@ -94,7 +94,7 @@ function renderPage() {
 
     content.appendChild(nav);
     content.appendChild(heroFrame);
-    content.appendChild(footer);
+    document.body.appendChild(footer);
 
     setActiveButton(document.querySelector(".navigation-button"));
     loadHome();
