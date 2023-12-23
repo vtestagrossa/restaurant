@@ -1,5 +1,7 @@
 import './style.css';
 import loadHome from './home.js';
+import loadMenu from './menu.js';
+import loadContact from './contact.js';
 
 function createNav() {
     const navbar = document.createElement('div');
@@ -13,8 +15,8 @@ function createNav() {
     const navigation = document.createElement('div');
     navigation.classList.add('navigation');
     const homeBtn = document.createElement('button');
-    homeBtn.textContent = "Home";
     homeBtn.classList.add('navigation-button');
+    homeBtn.textContent = "Home";
     homeBtn.addEventListener(('click'), (e) => {
         if (e.target.classList.contains("navigation-active")) return;
         setActiveButton(homeBtn);
@@ -27,7 +29,7 @@ function createNav() {
     menuBtn.addEventListener(('click'), (e) => {
         if (e.target.classList.contains("navigation-active")) return;
         setActiveButton(menuBtn);
-        //TODO: loadMenu
+        loadMenu();
     });
 
     const contactBtn = document.createElement('button');
@@ -36,7 +38,7 @@ function createNav() {
     contactBtn.addEventListener(('click'), (e) => {
         if (e.target.classList.contains("navigation-active")) return;
         setActiveButton(contactBtn);
-        //TODO: loadContact
+        loadContact();
     });
 
     navigation.appendChild(homeBtn);
@@ -53,14 +55,11 @@ function createNav() {
 
 function setActiveButton(button) {
     const buttons = document.querySelectorAll('.navigation-button');
-    console.log('test');
     buttons.forEach((button) => {
         if (button !== this) {
-            console.log(button.textContent);
             button.classList.remove('navigation-active');
         }
     });
-    console.log('active');
     button.classList.add('navigation-active');
 }
 
