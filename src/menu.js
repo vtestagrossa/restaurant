@@ -1,7 +1,7 @@
 function createMenuContainer(){
     const menuContainer = document.createElement('div');
     menuContainer.classList.add('menu-container');
-    menuContainer.classList.add('slideInLeft');
+    menuContainer.classList.add('slideInRight');
 
     return menuContainer;
 }

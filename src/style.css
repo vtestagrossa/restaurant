@@ -7,10 +7,10 @@
     }
 }@keyframes slideInRight {
     from {
-        margin-left: 0%;
+        margin-left: -50%;
     }
     to {
-        margin-left: 100%;
+        margin-left: 0%;
     }
 }
 @font-face{
