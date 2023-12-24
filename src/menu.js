@@ -5,10 +5,10 @@ function createMenuContainer(){
     return menuContainer;
 }
 function createMenuItem(){
-    //TODO: add item name and description to args
+    //TODO: add item name, image url and description to args
     const menuItem = document.createElement('div');
     menuItem.classList.add('menu-item');
-    
+
     return menuItem;
 }
 function loadMenu(sliderClass){

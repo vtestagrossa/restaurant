@@ -10,7 +10,7 @@ function createNav() {
     const logoContainer = document.createElement('div');
     logoContainer.classList.add('logo');
     const logo = document.createElement('h1');
-    logo.textContent = "Gastro Pub";
+    logo.textContent = "Meat O'Malley's";
 
     const navigation = document.createElement('div');
     navigation.classList.add('navigation');

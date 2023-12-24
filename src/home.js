@@ -6,7 +6,7 @@ function createTop() {
     const heading = document.createElement('h1');
     heading.textContent = "Come Eat, Drink Your Fill!";
     const subHeading = document.createElement('p');
-    subHeading.textContent = "Try our signature gastro pub fare and our selection of draft beers.";
+    subHeading.textContent = "Try our signature gastropub fare and our selection of draft beers.";
 
     top.appendChild(heroLogo);
     heroLogo.appendChild(heading);
@@ -26,7 +26,7 @@ function createBottom(){
     const hoursHeading = document.createElement('h2');
     hoursHeading.textContent = "Hours:";
     const hours = document.createElement('p');
-    hours.textContent = "Su-Th: 1100-2200, Fri-Sat: 1000-2300";
+    hours.textContent = "Sun-Thu: 1100-2200, Fri-Sat: 1000-2300";
 
     bottom.appendChild(locationHeading);
     bottom.appendChild(location);
