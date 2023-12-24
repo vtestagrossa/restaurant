@@ -8,7 +8,7 @@ function createMenuItem(){
     //TODO: add item name and description to args
     const menuItem = document.createElement('div');
     menuItem.classList.add('menu-item');
-
+    
     return menuItem;
 }
 function loadMenu(sliderClass){
