@@ -16,29 +16,35 @@ function createNav() {
     navigation.classList.add('navigation');
     const homeBtn = document.createElement('button');
     homeBtn.classList.add('navigation-button');
+    homeBtn.setAttribute('id', 'homeBtn');
     homeBtn.textContent = "Home";
     homeBtn.addEventListener(('click'), (e) => {
         if (e.target.classList.contains("navigation-active")) return;
+        const sliderClass = getSliderDirection(homeBtn);
         setActiveButton(homeBtn);
-        loadHome();
+        loadHome(sliderClass);
     });
 
     const menuBtn = document.createElement('button');
     menuBtn.classList.add('navigation-button');
+    menuBtn.setAttribute('id', 'menuBtn');
     menuBtn.textContent = "Menu";
     menuBtn.addEventListener(('click'), (e) => {
         if (e.target.classList.contains("navigation-active")) return;
+        const sliderClass = getSliderDirection(menuBtn);
         setActiveButton(menuBtn);
-        loadMenu();
+        loadMenu(sliderClass);
     });
 
     const contactBtn = document.createElement('button');
     contactBtn.classList.add('navigation-button');
+    contactBtn.setAttribute('id', 'contactBtn');
     contactBtn.textContent = "Contact";
     contactBtn.addEventListener(('click'), (e) => {
         if (e.target.classList.contains("navigation-active")) return;
+        const sliderClass = getSliderDirection(contactBtn);
         setActiveButton(contactBtn);
-        loadContact();
+        loadContact(sliderClass);
     });
 
     navigation.appendChild(homeBtn);
@@ -52,7 +58,23 @@ function createNav() {
 
     return navbar;
 }
-
+function getSliderDirection(button){
+    if (button === document.getElementById('homeBtn')){
+        return "slideInRight";
+    }
+    else if (button === document.getElementById('contactBtn')){
+        return "slideInLeft";
+    }
+    else {
+        const activeBtn = document.querySelector('.navigation-active');
+        if (activeBtn === document.getElementById('homeBtn')){
+            return "slideInLeft";
+        }
+        else {
+            return "slideInRight";
+        }
+    }
+}
 function setActiveButton(button) {
     const buttons = document.querySelectorAll('.navigation-button');
     buttons.forEach((button) => {

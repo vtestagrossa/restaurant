@@ -1,7 +1,6 @@
 function createMenuContainer(){
     const menuContainer = document.createElement('div');
     menuContainer.classList.add('menu-container');
-    menuContainer.classList.add('slideInRight');
 
     return menuContainer;
 }
@@ -12,10 +11,11 @@ function createMenuItem(){
 
     return menuItem;
 }
-function loadMenu(){
+function loadMenu(sliderClass){
     const container = document.getElementById('hero-frame');
     container.textContent = "";
     const menuContainer = createMenuContainer();
+    menuContainer.classList.add(sliderClass);
     for (let i = 0; i < 12; i++){
         menuContainer.appendChild(createMenuItem());
     }
