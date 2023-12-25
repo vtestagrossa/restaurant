@@ -1,5 +1,6 @@
-//TODO: Implement and include in website.js
 function createContact(){
+    //TODO: Create a contact page with fake phone number,
+    //email address.
     const contact = document.createElement('div');
     contact.classList.add('contact-container');
 

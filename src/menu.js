@@ -1,7 +1,9 @@
+import json from './data.json5';
+
 function createMenuContainer(){
     const menuContainer = document.createElement('div');
     menuContainer.classList.add('menu-container');
-
+    
     return menuContainer;
 }
 function createMenuItem(){

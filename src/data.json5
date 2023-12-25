@@ -1,0 +1,23 @@
+{
+  "menu": [
+    {
+        "name": "Brisket",
+        "description": "delicious brisket",
+        "img-url": "./brisket.jpg"
+    },
+    {
+        "name": "Pulled Pork",
+        "description": "delicious pulled pork",
+        "img_url": "./pPork.jpg"
+    },
+    {
+        "name": "Ribs",
+        "description": "delicious ribs",
+        "img_url": "./ribs.jpg"
+    },
+    {
+        "name": "Steak",
+        "description": "delicious steak",
+        "img_url": "./steak.jpg"
+    },
+]}

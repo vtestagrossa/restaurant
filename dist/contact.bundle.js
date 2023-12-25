@@ -16,7 +16,7 @@
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n//TODO: Implement and include in website.js\nfunction createContact(){\n    const contact = document.createElement('div');\n    contact.classList.add('contact-container');\n\n    return contact;\n}\nfunction loadContact(sliderClass){\n    const container = document.getElementById('hero-frame');\n    container.textContent = \"\";\n    const contact = createContact();\n    contact.classList.add(sliderClass);\n    container.appendChild(contact);\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (loadContact);\n\n//# sourceURL=webpack://restaurant/./src/contact.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction createContact(){\n    //TODO: Create a contact page with fake phone number,\n    //email address.\n    const contact = document.createElement('div');\n    contact.classList.add('contact-container');\n\n    return contact;\n}\nfunction loadContact(sliderClass){\n    const container = document.getElementById('hero-frame');\n    container.textContent = \"\";\n    const contact = createContact();\n    contact.classList.add(sliderClass);\n    container.appendChild(contact);\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (loadContact);\n\n//# sourceURL=webpack://restaurant/./src/contact.js?");
 
 /***/ })
 
