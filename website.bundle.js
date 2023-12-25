@@ -126,7 +126,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n//TODO: Implement and include in website.js\nfunction createContact(){\n    const contact = document.createElement('div');\n    contact.classList.add('contact-container');\n\n    return contact;\n}\nfunction loadContact(sliderClass){\n    const container = document.getElementById('hero-frame');\n    container.textContent = \"\";\n    const contact = createContact();\n    contact.classList.add(sliderClass);\n    container.appendChild(contact);\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (loadContact);\n\n//# sourceURL=webpack://restaurant/./src/contact.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction createContact(){\n    //TODO: Create a contact page with fake phone number,\n    //email address.\n    const contact = document.createElement('div');\n    contact.classList.add('contact-container');\n\n    return contact;\n}\nfunction loadContact(sliderClass){\n    const container = document.getElementById('hero-frame');\n    container.textContent = \"\";\n    const contact = createContact();\n    contact.classList.add(sliderClass);\n    container.appendChild(contact);\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (loadContact);\n\n//# sourceURL=webpack://restaurant/./src/contact.js?");
 
 /***/ }),
 
@@ -146,7 +146,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction createMenuContainer(){\n    const menuContainer = document.createElement('div');\n    menuContainer.classList.add('menu-container');\n\n    return menuContainer;\n}\nfunction createMenuItem(){\n    //TODO: add item name, image url and description to args\n    const menuItem = document.createElement('div');\n    menuItem.classList.add('menu-item');\n\n    return menuItem;\n}\nfunction loadMenu(sliderClass){\n    const container = document.getElementById('hero-frame');\n    container.textContent = \"\";\n    const menuContainer = createMenuContainer();\n    menuContainer.classList.add(sliderClass);\n    for (let i = 0; i < 12; i++){\n        menuContainer.appendChild(createMenuItem());\n    }\n\n    container.appendChild(menuContainer);\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (loadMenu);\n\n//# sourceURL=webpack://restaurant/./src/menu.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _data_json5__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./data.json5 */ \"./src/data.json5\");\n\n\nfunction createMenuContainer(){\n    const menuContainer = document.createElement('div');\n    menuContainer.classList.add('menu-container');\n    \n    return menuContainer;\n}\nfunction createMenuItem(){\n    //TODO: add item name, image url and description to args\n    const menuItem = document.createElement('div');\n    menuItem.classList.add('menu-item');\n\n    return menuItem;\n}\nfunction loadMenu(sliderClass){\n    const container = document.getElementById('hero-frame');\n    container.textContent = \"\";\n    const menuContainer = createMenuContainer();\n    menuContainer.classList.add(sliderClass);\n    for (let i = 0; i < 12; i++){\n        menuContainer.appendChild(createMenuItem());\n    }\n\n    container.appendChild(menuContainer);\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (loadMenu);\n\n//# sourceURL=webpack://restaurant/./src/menu.js?");
 
 /***/ }),
 
@@ -177,6 +177,16 @@ eval("module.exports = __webpack_require__.p + \"109a10dca0508e41aa12.ttf\";\n\n
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"2f62f9dcbc96fc7af351.jpg\";\n\n//# sourceURL=webpack://restaurant/./src/background.jpg?");
+
+/***/ }),
+
+/***/ "./src/data.json5":
+/*!************************!*\
+  !*** ./src/data.json5 ***!
+  \************************/
+/***/ ((module) => {
+
+eval("module.exports = JSON.parse('{\"menu\":[{\"name\":\"Brisket\",\"description\":\"delicious brisket\",\"img-url\":\"./brisket.jpg\"},{\"name\":\"Pulled Pork\",\"description\":\"delicious pulled pork\",\"img_url\":\"./pPork.jpg\"},{\"name\":\"Ribs\",\"description\":\"delicious ribs\",\"img_url\":\"./ribs.jpg\"},{\"name\":\"Steak\",\"description\":\"delicious steak\",\"img_url\":\"./steak.jpg\"}]}');\n\n//# sourceURL=webpack://restaurant/./src/data.json5?");
 
 /***/ })
 
