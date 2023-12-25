@@ -35,7 +35,7 @@ body{
     height: 100vh;
     width: 100%;
     margin: 0;
-    background: url(../src/background.jpg);
+    background: url(./images/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -150,16 +150,34 @@ body{
 }
 .menu-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, 50%);
+    grid-template-columns: repeat(auto-fit, 45%);
     grid-auto-rows: minmax(350px, 33%);
+    gap: 1em;
     width: 100%;
     max-width: 106em;
     height: 100%;
 }
 .menu-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 2em;
     width: 100%;
     min-height: 100%;
     border-style: solid;
+    color: white;
+    background-color: black;
+    opacity: 75%;
+}
+.menu-item-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu-image{
+    width: 50%;
+    height: 50%;
 }
 .contact-container{
     border-style: solid;
