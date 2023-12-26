@@ -165,19 +165,27 @@ body{
     padding: 2em;
     width: 100%;
     min-height: 100%;
-    border-style: solid;
+    font-family: "Marker";
     color: white;
-    background-color: black;
-    opacity: 75%;
+    text-shadow: 0.125em 0.125em black;
+}
+.menu-title{
+    font-size: 250%;
+    margin:0;
 }
 .menu-item-header{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 50%;
+    margin: 0;
 }
 .menu-image{
     width: 50%;
     height: 50%;
+}
+.menu-description{
+    margin-top: 0;
 }
 .contact-container{
     border-style: solid;

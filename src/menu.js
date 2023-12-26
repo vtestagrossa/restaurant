@@ -25,11 +25,13 @@ function createMenuItem(title, description, url){
 
     menuItem.classList.add('menu-item');
     menuHeader.classList.add('menu-item-header');
-    menuImage.setAttribute('src', url);
+    menuTitle.classList.add('menu-title');
+    menuImage.setAttribute('src', "../src/images/" + url);
     menuImage.classList.add('menu-image');
+    menuDescription.classList.add('menu-description');
 
+    menuItem.appendChild(menuImage);
     menuItem.appendChild(menuHeader);
-    menuHeader.appendChild(menuImage);
     menuHeader.appendChild(menuTitle);
     menuItem.appendChild(menuDescription);
 
@@ -41,9 +43,10 @@ function loadMenu(sliderClass){
     container.textContent = "";
     const menuContainer = createMenuContainer();
     menuContainer.classList.add(sliderClass);
-    for (let i = 0; i < 12; i++){
-        menuContainer.appendChild(createMenuItem("test", "testing the test", "../src/images/background.jpg"));
-    }
+
+    json.menu.forEach((item) => {
+        menuContainer.appendChild(createMenuItem(item.name, item.description, item.img_url));
+    });
 
     container.appendChild(menuContainer);
 }

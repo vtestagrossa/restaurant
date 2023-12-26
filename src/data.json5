@@ -1,23 +1,29 @@
 {
   "menu": [
     {
-        "name": "Brisket",
-        "description": "delicious brisket",
-        "img-url": "./brisket.jpg"
+        "name": "BBQ Brisket",
+        "description": "A delicious, slow-cooked brisket \
+        smothered in our signature BBQ sauced, served with \
+        a choice of two sides.",
+        "img_url": "brisket.webp"
     },
     {
-        "name": "Pulled Pork",
-        "description": "delicious pulled pork",
-        "img_url": "./pPork.jpg"
+        "name": "Pulled Pork Sandwich",
+        "description": "Our famous pulled pork sandwich \
+        with coleslaw, served with a choice of two sides.",
+        "img_url": "pPork.jpg"
     },
     {
         "name": "Ribs",
-        "description": "delicious ribs",
-        "img_url": "./ribs.jpg"
+        "description": "Wood smoked BBQ ribs, dry rubbed with our \
+        signature seasonings and topped with BBQ sauce from our selection \
+        of in-house sauces, served with a choice of two sides.",
+        "img_url": "ribs.jpg"
     },
     {
-        "name": "Steak",
-        "description": "delicious steak",
-        "img_url": "./steak.jpg"
+        "name": "Tri-tip",
+        "description": "Slow-smoked tri-tip cooked all day and smoked using \
+        applewood. Comes with a choice of two sides.",
+        "img_url": "steak.jpg"
     },
 ]}
