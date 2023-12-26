@@ -150,10 +150,10 @@ body{
 }
 .menu-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, 45%);
+    grid-template-columns: repeat(auto-fit, 47.5%);
     grid-auto-rows: minmax(350px, 33%);
-    gap: 1em;
-    width: 100%;
+    gap: 5%;
+    width: 90%;
     max-width: 106em;
     height: 100%;
 }
@@ -168,6 +168,8 @@ body{
     font-family: "Marker";
     color: white;
     text-shadow: 0.125em 0.125em black;
+    background-color: black;
+    opacity: 75%;
 }
 .menu-title{
     font-size: 250%;
