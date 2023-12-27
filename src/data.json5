@@ -1,29 +1,76 @@
 {
   "menu": [
-    {
-        "name": "BBQ Brisket",
-        "description": "A delicious, slow-cooked brisket \
-        smothered in our signature BBQ sauced, served with \
-        a choice of two sides.",
-        "img_url": "brisket.webp"
-    },
-    {
-        "name": "Pulled Pork Sandwich",
-        "description": "Our famous pulled pork sandwich \
-        with coleslaw, served with a choice of two sides.",
-        "img_url": "pPork.jpg"
-    },
-    {
-        "name": "Ribs",
-        "description": "Wood smoked BBQ ribs, dry rubbed with our \
-        signature seasonings and topped with BBQ sauce from our selection \
-        of in-house sauces, served with a choice of two sides.",
-        "img_url": "ribs.jpg"
-    },
-    {
-        "name": "Tri-tip",
-        "description": "Slow-smoked tri-tip cooked all day and smoked using \
-        applewood. Comes with a choice of two sides.",
-        "img_url": "steak.jpg"
-    },
-]}
+        {
+            "name": "BBQ Brisket",
+            "description": "A delicious, slow-cooked brisket \
+            smothered in our signature BBQ sauced, served with \
+            a choice of two sides.",
+            "img_url": "brisket.webp"
+        },
+        {
+            "name": "Pulled Pork Sandwich",
+            "description": "Our famous pulled pork sandwich \
+            with coleslaw, served with a choice of two sides.",
+            "img_url": "pPork.jpg"
+        },
+        {
+            "name": "Ribs",
+            "description": "Wood smoked BBQ ribs, dry rubbed with our \
+            signature seasonings and topped with BBQ sauce from our selection \
+            of in-house sauces, served with a choice of two sides.",
+            "img_url": "ribs.jpg"
+        },
+        {
+            "name": "Tri-tip",
+            "description": "Slow-smoked tri-tip cooked all day and smoked using \
+            applewood. Comes with a choice of two sides.",
+            "img_url": "steak.jpg"
+        },
+    ],
+    "sides": [
+        {
+            "name":"Loaded Mashed Stuffed Potatoes",
+            "description":"Gourmet loaded mashed, stuffed potatoes, twice \
+            baked and topped with bacon, chive, and sour cream(optional).",
+            "img_url":"mashed.jpeg",
+        },
+        {
+            "name":"Fried Asparagus",
+            "description":"Beer battered, deep fried asparagus with \
+            our special dipping sauce.",
+            "img_url":"asparagus.jpg",
+        },
+        {
+            "name":"",
+            "description":"",
+            "img_url":"",
+        },
+        {
+            "name":"",
+            "description":"",
+            "img_url":"",
+        },
+    ],
+    "drinks": [
+        {
+            "name":"",
+            "description":"",
+            "img_url":"",
+        },
+        {
+            "name":"",
+            "description":"",
+            "img_url":"",
+        },
+        {
+            "name":"",
+            "description":"",
+            "img_url":"",
+        },
+        {
+            "name":"",
+            "description":"",
+            "img_url":"",
+        },
+    ],
+}

@@ -13,7 +13,6 @@ function createMenuContainer(){
     return menuContainer;
 }
 function createMenuItem(title, description, url){
-    //TODO: accept menu item object and build a menu item from it
     const menuItem = document.createElement('div');
     const menuHeader = document.createElement('span');
     const menuTitle = document.createElement('h1');
@@ -33,10 +32,23 @@ function createMenuItem(title, description, url){
     menuItem.appendChild(menuImage);
     menuItem.appendChild(menuHeader);
     menuHeader.appendChild(menuTitle);
-    menuItem.appendChild(menuDescription);
+    menuHeader.appendChild(menuDescription);
 
 
     return menuItem;
+}
+function createMenuHeader(headingTitle){
+    const headingContainer = document.createElement('div');
+    headingContainer.classList.add('menu-item');
+    headingContainer.classList.add('col-2');
+    headingContainer.classList.add('transparent');
+    headingContainer.classList.add('large-font');
+    const heading = document.createElement('h1');
+    heading.textContent = headingTitle;
+    heading.classList.add('menu-title');
+    headingContainer.appendChild(heading);
+
+    return headingContainer;
 }
 function loadMenu(sliderClass){
     const container = document.getElementById('hero-frame');
@@ -44,8 +56,21 @@ function loadMenu(sliderClass){
     const menuContainer = createMenuContainer();
     menuContainer.classList.add(sliderClass);
 
-    json.menu.forEach((item) => {
-        menuContainer.appendChild(createMenuItem(item.name, item.description, item.img_url));
+    const entreeHeading = createMenuHeader("Entrees");
+    const sidesHeading = createMenuHeader("Sides");
+    const drinksHeading = createMenuHeader("Drinks");
+
+    menuContainer.appendChild(entreeHeading);
+    json.menu.forEach((entree) => {
+        menuContainer.appendChild(createMenuItem(entree.name, entree.description, entree.img_url));
+    });
+    menuContainer.appendChild(sidesHeading);
+    json.sides.forEach((side) => {
+        menuContainer.appendChild(createMenuItem(side.name, side.description, side.img_url));
+    });
+    menuContainer.appendChild(drinksHeading);
+    json.drinks.forEach((drink) => {
+        menuContainer.appendChild(createMenuItem(drink.name, drink.description, drink.img_url));
     });
 
     container.appendChild(menuContainer);
