@@ -1,11 +1,9 @@
 @keyframes slideInLeft {
     from {
         margin-left: 99%;
-        width: 0%;
     }
     to {
         margin-left: 0%;
-        width: 100%;
     }
 }@keyframes slideInRight {
     from {

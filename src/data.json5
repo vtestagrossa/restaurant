@@ -41,36 +41,38 @@
             "img_url":"asparagus.jpg",
         },
         {
-            "name":"",
-            "description":"",
-            "img_url":"",
+            "name":"Steamed Vegetables",
+            "description":"Seasoned and steamed cauliflower, broccoli, asparagus \
+            potatoes, and beets.",
+            "img_url":"steamed.jpg",
         },
         {
-            "name":"",
-            "description":"",
-            "img_url":"",
+            "name":"Rice Pilaf",
+            "description":"Our in-house rice pilaf with chives, peas, and our \
+            special blend of seasonings.",
+            "img_url":"pilaf.jpg",
         },
     ],
     "drinks": [
         {
-            "name":"",
+            "name":"Stone Arrogant Bastard Ale",
             "description":"",
-            "img_url":"",
+            "img_url":"bastard.jpeg",
         },
         {
-            "name":"",
+            "name":"Stone Grapefruit Slam IPA",
             "description":"",
-            "img_url":"",
+            "img_url":"grapefruit.jpg",
         },
         {
-            "name":"",
+            "name":"Belching Beaver Peanut Butter Milk Stout",
             "description":"",
-            "img_url":"",
+            "img_url":"beaver.webp",
         },
         {
-            "name":"",
+            "name":"Belching Beaver Tropical Terps IPA",
             "description":"",
-            "img_url":"",
+            "img_url":"beaver_terps.png",
         },
     ],
 }
