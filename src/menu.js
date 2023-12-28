@@ -25,7 +25,7 @@ function createMenuItem(title, description, url){
     menuItem.classList.add('menu-item');
     menuHeader.classList.add('menu-item-header');
     menuTitle.classList.add('menu-title');
-    menuImage.setAttribute('src', "../src/images/" + url);
+    menuImage.setAttribute('src', "./images/" + url);
     menuImage.classList.add('menu-image');
     menuDescription.classList.add('menu-description');
 

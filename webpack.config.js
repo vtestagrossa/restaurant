@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const json5 = require('json5');
 
 module.exports = {
@@ -14,6 +15,13 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             title: "Meat O'Malley's",
+        }),
+        new CopyWebpackPlugin({
+            patterns: [
+                { 
+                    from: 'src/images', to: 'images' 
+                },
+            ],
         }),
     ],
     output: {
